@@ -1,29 +1,31 @@
-<?php 
+<?php
+
+	$plugin = elgg_get_plugin_from_id("metatag_manager");
+
 	// keywords
-	if($keywords = get_plugin_setting("metatag_manager_keywords", "metatag_manager")){
+	if ($keywords = $plugin->metatag_manager_keywords) {
 	?>
 		<meta name="keywords" content="<?php echo $keywords; ?>">
-	<?php 
+	<?php
 	}
 
 	// description
-	if($description = get_plugin_setting("metatag_manager_description", "metatag_manager")){
+	if ($description = $plugin->metatag_manager_description) {
 	?>
 		<meta name="description" content="<?php echo $description; ?>">
-	<?php 
+	<?php
 	}
 	
 	// robots
-	if($robots = get_plugin_setting("metatag_manager_robots", "metatag_manager")){
+	if ($robots = $plugin->metatag_manager_robots) {
 	?>
 		<meta name="robots" content="<?php echo $robots; ?>">
-	<?php 
+	<?php
 	}
 	
 	//author
-	if($author = get_plugin_setting("metatag_manager_author", "metatag_manager")){
+	if ($author = $plugin->metatag_manager_author) {
 	?>
 		<meta name="author" content="<?php echo $author; ?>">
-	<?php 
+	<?php
 	}
-?>
