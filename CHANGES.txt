@@ -1,5 +1,11 @@
 = Version Information =
 
+1.0 (2013-09-19):
+
+- added: setting for custom metatags
+- changed: updated for Elgg 1.8
+- changed: settings can now be found under Plugin Settings instead of site configuration
+
 0.1:
 
 - first release
