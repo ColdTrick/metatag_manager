@@ -29,3 +29,7 @@
 		<meta name="author" content="<?php echo $author; ?>">
 	<?php
 	}
+	
+	if ($custom_metatags = $plugin->metatag_manager_custom) {
+		echo $custom_metatags;
+	}
