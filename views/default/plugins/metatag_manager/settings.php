@@ -14,4 +14,8 @@ $settings .= elgg_view("input/text" , array("name" => "params[metatag_manager_ro
 $settings .= "<label>" . elgg_echo("metatag_manager:settings:author");
 $settings .= elgg_view("input/text" , array("name" => "params[metatag_manager_author]", "value" => $plugin->metatag_manager_author)) . "</label>";
 
+$settings .= "<label>" . elgg_echo("metatag_manager:settings:custom");
+$settings .= elgg_view("input/plaintext" , array("name" => "params[metatag_manager_custom]", "value" => $plugin->metatag_manager_custom)) . "</label>";
+$settings .= "<div class='elgg-subtext'>" . elgg_echo("metatag_manager:settings:custom:info") . "</div>";
+
 echo $settings;
